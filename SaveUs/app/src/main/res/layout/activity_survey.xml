@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    tools:context=".Survey">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        tools:ignore="MissingConstraints">
+        <!-- This LinearLayout represents the contents of the screen  -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="407dp"
+            android:layout_height="698dp">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select all that apply"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.18" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="384dp"
+                android:layout_height="49dp"
+                android:text="Are you experiencing any of these symptoms?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.100000024" />
+
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.84"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.96" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="345dp"
+            android:layout_height="472dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="97dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Headache" />
+
+                <CheckBox
+                    android:id="@+id/cb13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sore throat" />
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Congestion or runny nose" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Abdominal discomfort" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Poor feeding/appetite" />
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chest pain" />
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wheezing" />
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rash" />
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seizures" />
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eye redness" />
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loss of taste" />
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loss of smell" />
+
+                <CheckBox
+                    android:id="@+id/cb11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cough" />
+
+                <CheckBox
+                    android:id="@+id/cb12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muscle aches/myalgia" />
+
+                <Button
+                    android:id="@+id/button_no"
+                    android:layout_width="123dp"
+                    android:layout_height="59dp"
+                    android:text="NO symptoms" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- The ActionBar displayed at the top -->
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- The main content view where fragments are loaded -->
+            <FrameLayout
+                android:id="@+id/flContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+
+        <!-- The navigation drawer that comes from the left -->
+        <!-- Note that `android:layout_gravity` needs to be set to 'start' -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nvView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/drawer_view" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

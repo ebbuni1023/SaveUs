@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200279647143",
+    "project_id": "covidtrackinghack",
+    "storage_bucket": "covidtrackinghack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200279647143:android:e2b9bd99735bd1eac94c82",
+        "android_client_info": {
+          "package_name": "com.example.covidtrackinghack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200279647143-1ct4otjt62lt6sqt91o5gbce6i3p9gr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWcPxFRKb6JQIQjKtjHgSwco2VJzEzJ8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200279647143-1ct4otjt62lt6sqt91o5gbce6i3p9gr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -35,8 +35,10 @@
             <Button
                 android:id="@+id/B_search"
                 android:layout_width="wrap_content"
+                android:background="@color/toolbar_color"
                 android:layout_height="wrap_content"
                 android:onClick="onClick"
+                android:textColor="#FFFFFF"
                 android:text="Search" />
 
         </LinearLayout>
@@ -45,19 +47,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/B_hopistals"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:background="@color/toolbar_color"
                 android:onClick="onClick"
-                android:text="Hospitals" />
+                android:text="Hospitals"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/B_menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@color/toolbar_color"
+
                 android:onClick="onClick"
-                android:text="MENU" />
+                android:text="MENU"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
 

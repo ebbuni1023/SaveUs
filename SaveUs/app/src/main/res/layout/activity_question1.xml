@@ -10,54 +10,52 @@
         android:id="@+id/button_no_question1"
         android:layout_width="208dp"
         android:layout_height="70dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginLeft="101dp"
-        android:layout_marginTop="511dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:layout_marginBottom="150dp"
         android:fontFamily="@font/nunito"
         android:text="NO"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="366dp"
         android:layout_height="150dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="163dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:layout_marginBottom="418dp"
         android:fontFamily="@font/nunito"
         android:text="@string/question1_text"
-        android:textColor="#FF5722"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
 
     <Button
         android:id="@+id/button_yes_question1"
         android:layout_width="208dp"
         android:layout_height="70dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginLeft="101dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:layout_marginBottom="277dp"
         android:fontFamily="@font/nunito"
         android:text="YES"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="436dp"
+        android:layout_height="312dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/question1_pic" />
 </androidx.constraintlayout.widget.ConstraintLayout>

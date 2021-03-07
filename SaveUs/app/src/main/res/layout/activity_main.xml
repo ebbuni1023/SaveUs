@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainact_image"
     android:fillViewport="true"
     tools:context=".MainActivity">
 
@@ -27,40 +26,30 @@
             android:layout_marginEnd="2dp"
             android:layout_marginRight="2dp">
 
-
-            <TextView
-                android:id="@+id/userEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/short_stack"
-                android:text="TextView"
-                android:textColor="#032FD1"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:visibility="invisible"
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="401dp"
+                android:layout_height="151dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.21"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.060000002" />
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo" />
 
-            <TextView
-                android:id="@+id/userName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/short_stack"
-                android:text="TextView"
-                android:textColor="#032FD1"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:visibility="invisible"
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="89dp"
+                android:layout_height="87dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/profile"
+                android:contentDescription="@string/qr_code"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.21"
+                app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.00999999" />
+                app:layout_constraintVertical_bias="0.26999998" />
 
             <EditText
                 android:id="@+id/idEdt"
@@ -76,6 +65,40 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="234dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/short_stack"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.87"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32999998" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="226dp"
+                android:layout_height="43dp"
+                android:fontFamily="@font/short_stack"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.26" />
 
             <ImageView
                 android:id="@+id/idIVQrcode"
@@ -98,9 +121,10 @@
                 app:backgroundTint="#225675"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.42000002" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout

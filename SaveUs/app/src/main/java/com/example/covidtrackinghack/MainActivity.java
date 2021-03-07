@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
         documentReference2.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot document, @Nullable FirebaseFirestoreException e) {
-                String name = "Full Name: " + document.getString("Full Name");
-                String email = "Email: " + document.getString("Email");
+                String name = document.getString("Full Name");
+                String email =  document.getString("Email");
               //  String res = "  \n\n ~~~~! Your name is: " + document.getString("Full Name") + " !~~~~" ;
                // forQRCode += res;
                // dataEdt.setText(forQRCode);

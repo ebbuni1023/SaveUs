@@ -4,17 +4,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/main_activity"
-            android:icon="@drawable/ic_info"
+            android:icon="@drawable/ic_home"
 
-            android:title="App Info"/>
+            android:title="Home"/>
         <item
             android:id="@+id/nav_first_fragment"
             android:icon="@drawable/ic_survey"
-            android:title="Checking Your Symptoms" />
+            android:title="Checking My Symptoms" />
         <item
             android:id="@+id/nav_second_fragment"
             android:icon="@drawable/ic_map"
-            android:title="Clinic Near You" />
+            android:title="Clinic Near Me" />
         <item
             android:id="@+id/nav_third_fragment"
             android:icon="@drawable/ic_contact"

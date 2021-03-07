@@ -19,38 +19,53 @@
             android:layout_height="698dp">
 
 
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="402dp"
+                android:layout_height="272dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"
+                app:srcCompat="@drawable/survey_pic" />
+
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito"
                 android:text="Select all that apply"
+                android:textColor="#000000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.18" />
+                app:layout_constraintVertical_bias="0.20999998" />
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="372dp"
-                android:layout_height="70dp"
+                android:layout_width="340dp"
+                android:layout_height="65dp"
                 android:fontFamily="@font/nunito"
                 android:text="Are you experiencing any of these symptoms?"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.100000024" />
+                app:layout_constraintVertical_bias="0.120000005" />
 
             <Button
                 android:id="@+id/button_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Next"
+                android:textColorHighlight="#182058"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.84"
@@ -63,12 +78,12 @@
             android:id="@+id/scrollView3"
             android:layout_width="345dp"
             android:layout_height="472dp"
-            android:layout_marginStart="64dp"
-            android:layout_marginLeft="64dp"
-            android:layout_marginTop="162dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="350dp"
             android:layout_marginEnd="2dp"
             android:layout_marginRight="2dp"
-            android:layout_marginBottom="97dp">
+            android:layout_marginBottom="90dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -177,8 +192,15 @@
                     android:id="@+id/button_no"
                     android:layout_width="123dp"
                     android:layout_height="59dp"
+                    android:background="#182058"
                     android:fontFamily="@font/nunito"
                     android:text="NO symptoms" />
+
+                <FrameLayout
+                    android:id="@+id/flContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
             </LinearLayout>
         </ScrollView>
 
@@ -194,11 +216,6 @@
                 android:layout_height="wrap_content" />
 
             <!-- The main content view where fragments are loaded -->
-            <FrameLayout
-                android:id="@+id/flContent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
         </LinearLayout>
 
         <!-- The navigation drawer that comes from the left -->

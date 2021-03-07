@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
     String userID;
     String userID2;
     String forQRCode;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,23 +79,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException e) {
                 forQRCode = documentSnapshot.getString("Your result:");
-
+                if (forQRCode != null) {
+                    dataEdt.setText("https://codd.cs.gsu.edu/~nchau1/gotCovid.png");
+                } else dataEdt.setText("https://codd.cs.gsu.edu/~nchau1/gotNoCovid.png");
             }
         });
-        DocumentReference documentReference2 = fStore.collection("users").document(userID2);
+       DocumentReference documentReference2 = fStore.collection("users").document(userID2);
         documentReference2.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot document, @Nullable FirebaseFirestoreException e) {
                 String name = "Full Name: " + document.getString("Full Name");
                 String email = "Email: " + document.getString("Email");
-                forQRCode += "  \n\n ~~~~! Your name is: " + document.getString("Full Name") + " !~~~~" ;
-                dataEdt.setText(forQRCode);
+              //  String res = "  \n\n ~~~~! Your name is: " + document.getString("Full Name") + " !~~~~" ;
+               // forQRCode += res;
+               // dataEdt.setText(forQRCode);
                 userName.setVisibility(View.VISIBLE);
                 userEmail.setVisibility(View.VISIBLE);
                 userName.setText(name);
                 userEmail.setText(email);
             }
         });
+
         // initializing onclick listener for button.
         generateQrBtn.setOnClickListener(new View.OnClickListener() {
             @Override

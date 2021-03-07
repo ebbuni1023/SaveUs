@@ -169,7 +169,6 @@ public class Survey extends AppCompatActivity {
                 java.util.Map<String, Object> contact = new HashMap<>();
                 contact.put("Your result:", str);
 
-                Toast.makeText(Survey.this, "Thank you! Your contact message has been saved!" , Toast.LENGTH_SHORT).show();
                 documentReference.set(contact).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

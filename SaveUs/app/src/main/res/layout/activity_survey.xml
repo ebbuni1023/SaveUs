@@ -23,6 +23,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
                 android:text="Select all that apply"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +34,9 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="384dp"
-                android:layout_height="49dp"
+                android:layout_width="372dp"
+                android:layout_height="70dp"
+                android:fontFamily="@font/nunito"
                 android:text="Are you experiencing any of these symptoms?"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -77,90 +79,105 @@
                     android:id="@+id/cb14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Headache" />
 
                 <CheckBox
                     android:id="@+id/cb13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Sore throat" />
 
                 <CheckBox
                     android:id="@+id/cb1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Congestion or runny nose" />
 
                 <CheckBox
                     android:id="@+id/cb2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Abdominal discomfort" />
 
                 <CheckBox
                     android:id="@+id/cb3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Poor feeding/appetite" />
 
                 <CheckBox
                     android:id="@+id/cb4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Chest pain" />
 
                 <CheckBox
                     android:id="@+id/cb5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Wheezing" />
 
                 <CheckBox
                     android:id="@+id/cb6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Rash" />
 
                 <CheckBox
                     android:id="@+id/cb7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Seizures" />
 
                 <CheckBox
                     android:id="@+id/cb8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Eye redness" />
 
                 <CheckBox
                     android:id="@+id/cb9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Loss of taste" />
 
                 <CheckBox
                     android:id="@+id/cb10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Loss of smell" />
 
                 <CheckBox
                     android:id="@+id/cb11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Cough" />
 
                 <CheckBox
                     android:id="@+id/cb12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito"
                     android:text="Muscle aches/myalgia" />
 
                 <Button
                     android:id="@+id/button_no"
                     android:layout_width="123dp"
                     android:layout_height="59dp"
+                    android:fontFamily="@font/nunito"
                     android:text="NO symptoms" />
             </LinearLayout>
         </ScrollView>

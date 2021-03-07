@@ -26,10 +26,10 @@
 
 
             android:layout_height="wrap_content"
-            android:fontFamily="@font/architects_daughter"
+            android:fontFamily="@font/nunito"
             android:paddingLeft="60dp"
             android:paddingTop="110dp"
-            android:text="Covid Tracking App"
+            android:text="Save Us"
             android:textColor="#FF5722"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -37,10 +37,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/architects_daughter"
+            android:fontFamily="@font/nunito"
             android:paddingLeft="60dp"
             android:paddingTop="140dp"
-            android:text="covidtrackingapp@gmail.com"
+            android:text="saveus@gmail.com"
             android:textColor="#FF5722"
             android:textSize="16sp"
             android:textStyle="bold" />
